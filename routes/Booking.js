@@ -8,8 +8,7 @@ const Bookingcontroller=require('../controllers/BookingConroller')
 
 router.post('/booking',Bookingcontroller.flightBooking)
 router.post("/Mybooking",Bookingcontroller.Mybooking)
-
-
+router.post("/cancelbooking",Bookingcontroller.CancelBooking)
 
 
 

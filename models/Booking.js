@@ -31,6 +31,10 @@ const bookingSchema = new mongoose.Schema({
     enum: ["confirmed", "cancelled", "pending"],
     default: "pending",
   },
+  isDeleted:{
+    type:Boolean,
+    default:false
+  },
 });
 
 module.exports = mongoose.model("Booking", bookingSchema);
